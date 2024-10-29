@@ -1,4 +1,4 @@
-Here is a README file template for Assignment 1:
+⚠️ Demo at: https://rolandmarchand.github.io/cst8285-portfolio/
 
 ---
 
@@ -15,11 +15,6 @@ This project is an introductory web development assignment designed to help stud
 ### Objectives
 - Develop a four-page personal portfolio website from scratch using HTML and CSS.
 - Showcase skills in HTML structuring and CSS styling to create a responsive and professional site.
-
-### Learning Resources
-- PowerPoint Slides and in-class code (Weeks 1–6)
-- [W3Schools HTML & CSS reference](https://www.w3schools.com)
-- HTML & CSS Cheat Sheet on Brightspace
 
 ---
 
