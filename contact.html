@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roland Marchand</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Colorful background -->
+    <div class="background-gradient"></div>
+
+    <!-- Header -->
+    <div class="flex-column">
+      <header id="site-header">
+	<!-- Left side -->
+	<nav>
+	  <a href="index.html" class="flex-icon-text-container">
+	    <img src="img/favicon/favicon.ico" alt="Roland logo">
+	    <span>
+	      Roland Marchand
+	    </span>
+	  </a>
+	</nav>
+
+	<!-- Right side -->
+	<nav class="flex-icon-text-container">
+	  <a href="index.html">About</a>
+	  <a href="resume.html">Resume</a>
+	  <a href="projects.html">Projects</a>
+	  <a href="contact.html">Contact</a>
+	</nav>
+      </header>
+
+      <main>
+	<article class="flex-main-article">
+	  <!-- Contact form -->
+	  <div class="center-form-container">
+	    <div class="form-container">
+	      <h1 class="centered-text-block">Contact Me</h1>
+	      
+	      <form action="#" method="post">
+
+		<!-- Name Field -->
+		<div>
+		  <label for="name">Name:</label>
+		  <br>
+		  <input type="text" id="name" name="name" required>
+		</div>
+		
+		<!-- Email Field -->
+		<div>
+		  <label for="email">Email Address:</label>
+		  <br>
+		  <input type="email" id="email" name="email" required>
+		</div>
+		
+		<!-- Subject Field -->
+		<div>
+		  <label for="subject">Subject:</label>
+		  <br>
+		  <input type="text" id="subject" name="subject" minlength="5" maxlength="50" required>
+		</div>
+		
+		<!-- Message Field -->
+		<div>
+		  <label for="message">Message:</label>
+		  <br>
+		  <textarea id="message" name="message" minlength="10" maxlength="300" rows="4" cols="30" required></textarea>
+		</div>
+		
+		<!-- Submit Button -->
+		<button type="submit">Submit</button>
+	      </form>
+	    </div>
+	  </div>
+	</article>
+      </main>
+
+      <!-- Footer -->
+      <footer id="site-footer">
+	<!-- Copyright -->
+	<span>
+	  &copy; Copyright 2024 Roland Marchand. All Rights Reserved.
+	</span>
+	<!-- Email -->
+	<a href="mailto:marc0424@algonquinlive.com" class="flex-icon-text-container">
+	  <!-- Mail icon -->
+	  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+	    <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
+	    <path d="M3 7l9 6l9 -6"></path>
+	  </svg> 
+	  <span>
+	    marc0424@algonquinlive.com
+	  </span>
+	</a>
+      </footer>
+    </div>
+  </body>
+</html>

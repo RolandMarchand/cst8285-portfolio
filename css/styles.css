@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+    /* Set font for webpage */
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #e0aaff;
+}
+
+html, body {
+    /* Content takes the full viewport */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Colorful and animated background. */
+.background-gradient {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+
+    background: rgb(16,0,43);
+    background: linear-gradient(47deg, rgba(16,0,43,1) 0%, rgba(21,8,89,1) 15%, rgba(60,9,108,1) 40%, rgba(52,9,104,1) 60%, rgba(21,8,89,1) 85%, rgba(16,0,43,1) 100%);
+    background-size: 300% 100%;
+    animation: gradientAnimation 100s ease infinite;
+}
+
+/* Colorful and animated background. */
+@keyframes gradientAnimation {
+    0% {
+	background-position: 0% 0%;
+    }
+    50% {
+	background-position: 100% 0%;
+    }
+    100% {
+	background-position: 0% 0%;
+    }
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Basic anchor styling */
+a {
+    text-decoration: none;
+    color: #f72585;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+/* Hover effect */
+a:hover {
+    color: #b5179e;
+}
+
+/* Active link state */
+a:active {
+    color: #7209b7;
+}
+
+/* Focus state for accessibility */
+a:focus {
+    outline: 2px outset #b5179e;
+    outline-offset: 2px;
+}
+
+.center-form-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Stylesheet for the form's container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #c77dff0f;
+    border-radius: 64px;
+    padding: 4em;
+    width: fit-content;
+}
+
+/* Expand all form children */
+.form-container > * {
+    width: fit-content;
+}
+
+/* Vertically center form children  */
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+/* Theme form text input */
+form textarea, form input {
+    cursor: text;
+    color: #10002b;
+    border: 0;
+    background-color: #e0aaff;
+    border-radius: 1rem;
+    padding: 10px 20px 10px 20px;
+}
+
+/* Theme form submission button */
+form > button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #7b2cbf;
+    border-radius: 1rem;
+    padding: 10px 20px 10px 20px;
+    border: 0;
+    flex-grow: 0;
+}
+
+.centered-text-block {
+    text-align: center;
+}
+
+/* Flex container for projects */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/* Cards showing project name, picture, link, and description */
+.project {
+    background: #c77dff0f;
+    border-radius: 16px;
+    padding: 2em;
+    margin: 2em;
+    width: 32em;
+}
+
+/* Thumbnails of projects */
+.project > img {
+    border-radius: 16px;
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+}
+
+/* Turn images round */
+.rounded {
+    border-radius: 50%;
+}
+
+/* Align icons matched with text */
+.flex-icon-text-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.flex-column > * {
+    flex: 1 0 auto;
+}
+
+.flex-nav {
+    display: flex;
+}
+
+/* Flex container for the central article of each web page */
+.flex-main-article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: 12rem;
+    margin-right: 12rem;
+}
+
+/* Do not grow articles' children by default */
+.flex-main-article > * {
+    flex-grow: 0;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+/* Logos in navigation bars */
+nav img {
+    width: 2rem;
+    height: auto;
+}
+
+#site-header, #site-footer {
+    flex: inherit;
+    flex-shrink: 0;
+}
+
+#site-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 96px;
+    margin-top: 8px;
+    gap: 16px;
+}
+
+#site-footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #10002b55;
+    padding: 2rem;
+    margin-top: 96px;
+}
+
+/* Tablets and phones. */
+@media (max-width: 1024px) {
+    html {
+	font-size: 14px;
+    }
+
+    .flex-icon-text-container {
+	gap: 1rem;
+    }
+}
+
+/* Phones. */
+@media (max-width: 600px) {
+    html {
+	font-size: 12px;
+    }
+
+    #site-footer {
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+    }
+
+    .flex-main-article {
+	margin-left: 4rem;
+	margin-right: 4rem;
+    }
+}
